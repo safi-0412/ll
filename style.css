@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: go 4s infinite alternate ease-in 2s;
+}
+
+@keyframes go{
+    0%{
+        top: 0%;
+        left: 0%;
+        background: red;
+    }
+    25%{
+        top: 0%;
+        left: 400px;
+        background-color: pink;
+    }
+    50%{
+        top: 400px;
+        left: 400px;
+        background-color: brown;
+    }
+    75%{
+        left: 0;
+        top: 400px;
+        background-color: black;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: sandybrown;
+    }
+}
